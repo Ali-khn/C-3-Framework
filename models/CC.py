@@ -23,7 +23,7 @@ class CrowdCounter(nn.Module):
             from .SCC_Model.Res101 import Res101 as net            
         elif model_name == 'Res101_SFCN':
             from .SCC_Model.Res101_SFCN import Res101_SFCN as net
-
+        gpus=[0] #To utilize Google colab, change gpus at models/cc.py to gpus=[0].(one gpu)
         self.CCN = net()
         if len(gpus)>1:
             self.CCN = torch.nn.DataParallel(self.CCN, device_ids=gpus).cuda()
