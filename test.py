@@ -8,6 +8,7 @@ from torch.autograd import Variable
 import torchvision.transforms as standard_transforms
 import misc.transforms as own_transforms
 import pandas as pd
+from pathlib import Path
 
 from models.CC import CrowdCounter
 from config import cfg
@@ -41,7 +42,7 @@ pil_to_tensor = standard_transforms.ToTensor()
 
 dataRoot = '../ProcessedData/shanghaitech_part_B/test'
 
-model_path = 'xxx.pth'
+model_path = Path(os.getcwd())/str(exp)/str(05-21_11-50_SHHB_Res101_SFCN_1e-05)/str(all_ep_11_mae_47.8_mse_61.0.pth) #this should be the 'xxx.pth' in the /exp/ directory. Based on your settings, the path could change.
 
 def main():
     
