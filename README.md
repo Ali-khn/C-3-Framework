@@ -82,7 +82,7 @@ Due to limited spare time and the number of GPUs, I do not plan to conduct some 
 
 - Data Preparation
   - In ```./datasets/XXX/readme.md```, download our processed dataset or run the ```prepare_XXX.m/.py``` to generate the desity maps. If you want to directly download all processeed data (including Shanghai Tech, UCF-QNRF, UCF_CC_50 and WorldExpo'10), please visit the [**link**](https://mailnwpueducn-my.sharepoint.com/:f:/g/personal/gjy3035_mail_nwpu_edu_cn/EkxvOVJBVuxPsu75YfYhv9UBKRFNP7WgLdxXFMSeHGhXjQ?e=IdyAzA).
-  - Place the processed data to ```../ProcessedData```.
+  - Place the processed data to ```../ProcessedData```. If you work on Shanghi Tech_part_B, make sure the folders' names are "test" and "train" in ```../ProcessedData```.
 
 - Pretrained Model
   - Some Counting Networks (such as VGG, CSRNet and so on) adopt the pre-trained models on ImageNet. You can download them from [TorchVision](https://github.com/pytorch/vision/tree/master/torchvision/models)
@@ -110,6 +110,7 @@ Due to limited spare time and the number of GPUs, I do not plan to conduct some 
 ### Testing
 
 We only provide an example to test the model on the test set. You may need to modify it to test your own models.
+- I have provided my results in the "/exp" directory.( just as a sample. The training epoch is 11 and the results are on two Shanghai Tech_part_B test images.)
 
 
 ### Pretrained Models on GCC
