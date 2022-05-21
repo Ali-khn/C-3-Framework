@@ -110,7 +110,7 @@ Due to limited spare time and the number of GPUs, I do not plan to conduct some 
 ### Testing
 
 We only provide an example to test the model on the test set. You may need to modify it to test your own models.
-- I have provided my results in the "/exp" directory.( just as a sample. The training epoch is 11 and the results are on two Shanghai Tech_part_B test images.)
+- I have provided my results in the "/SHHB_results" directory.( just as a sample. The training epoch is 11 and the results are on two Shanghai Tech_part_B test images.)
 
 
 ### Pretrained Models on GCC
